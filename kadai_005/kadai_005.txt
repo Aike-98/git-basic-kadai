@@ -1,41 +1,59 @@
-C:\Users\acaul\Documents\SamuraiEngineer>mkdir git_challenge
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic>mkdir git_challenge
 
-C:\Users\acaul\Documents\SamuraiEngineer>git init
-Initialized empty Git repository in C:/Users/acaul/Documents/SamuraiEngineer/.git/
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic>cd git_challenge
 
-C:\Users\acaul\Documents\SamuraiEngineer>echo Hello, world! >> hello_world.txt
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git init
+Initialized empty Git repository in C:/Users/acaul/Documents/SamuraiEngineer/git_basic/git_challenge/.git/
 
-C:\Users\acaul\Documents\SamuraiEngineer>type hello_world.txt
-Hello, world!
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>echo Hello, world! >> hello_world.txt
 
-C:\Users\acaul\Documents\SamuraiEngineer>git add hello_world.txt
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git add hello_world.txt
 
-C:\Users\acaul\Documents\SamuraiEngineer>git commit -m "hello_world.txtを追加"
-[main (root-commit) 4f3064f] hello_world.txtを追加
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git commit -m "hello_world.txtを追加"
+[main (root-commit) 4ccc5e4] hello_world.txtを追加
  1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
 
-C:\Users\acaul\Documents\SamuraiEngineer>echo こんにちは、世界！ >> hello_world.txt
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>echo こんにちは、世界！ >> hello_world.txt
 
-C:\Users\acaul\Documents\SamuraiEngineer>type hello_world.txt
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>type hello_world.txt
 Hello, world!
 こんにちは、世界！
 
-C:\Users\acaul\Documents\SamuraiEngineer>git add hello_world.txt
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git add hello_world.txt
 
-C:\Users\acaul\Documents\SamuraiEngineer>git commit -m "日本語訳を追記"
-[main 4e94c5f] 日本語訳を追記
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git commit -m "日本語訳を追記"
+[main bae780d] 日本語訳を追記
  1 file changed, 1 insertion(+)
 
-C:\Users\acaul\Documents\SamuraiEngineer>git log
-commit 4e94c5fc3dedbd8f378dba8b66874ec14121d0c6 (HEAD -> main)
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>git log
+commit bae780dc3a39657f02676ad2afe21bafb47a5217 (HEAD -> main)
 Author: Aike-98 <aoi.ikeuchi.t3@gmail.com>
-Date:   Sat Jun 8 16:24:28 2024 +0900
+Date:   Sat Jun 8 16:36:51 2024 +0900
 
     日本語訳を追記
 
-commit 4f3064fa212f047a1f906acc21fab37e6426cc6d
+commit 4ccc5e48cc7d9cebee5ac2dce4a341733ecc77ad
 Author: Aike-98 <aoi.ikeuchi.t3@gmail.com>
-Date:   Sat Jun 8 16:21:26 2024 +0900
+Date:   Sat Jun 8 16:35:38 2024 +0900
 
     hello_world.txtを追加
+
+C:\Users\acaul\Documents\SamuraiEngineer\git_basic\git_challenge>
